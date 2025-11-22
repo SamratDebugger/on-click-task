@@ -1,5 +1,10 @@
 let button = document.getElementById("button");
-isRed = false;
+let isRed = false;
+
+
+let sideBar = document.getElementById("sideBar");
+let menuBtn = document.getElementById("menuBtn");
+let isOpen = false;
 
 button.addEventListener("click", function () {
     if (isRed) {
@@ -10,4 +15,20 @@ button.addEventListener("click", function () {
         document.body.style.backgroundColor = "red";
         isRed = true;
     }
+})
+
+
+
+menuBtn.addEventListener("click", function () {
+    if (isOpen) {
+        sideBar.style.display = "none";
+        isOpen = false;
+
+    }
+    else {
+        sideBar.style.display = "block";
+        isOpen = true;
+    }
+
+
 })

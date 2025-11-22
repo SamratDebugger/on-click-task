@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    border: 1px solid rgb(35, 1, 1);
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    display: none;
+
+
+
+
+}
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(35, 1, 1);
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    color: red;
+    border-radius: 5px;
+
+}
