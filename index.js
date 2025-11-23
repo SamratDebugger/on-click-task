@@ -36,3 +36,11 @@ close.addEventListener("click", function () {
 
 
 });
+
+function name(params) {
+
+}
+
+() => {
+
+}
