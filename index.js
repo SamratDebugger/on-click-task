@@ -1,10 +1,11 @@
-let button = document.getElementById("button");
+const button = document.getElementById("button");
 let isRed = false;
 
 
-let sideBar = document.getElementById("sideBar");
-let menuBtn = document.getElementById("menuBtn");
+const sideBar = document.getElementById("sideBar");
+const menuBtn = document.getElementById("menuBtn");
 let isOpen = false;
+const close = document.getElementById("close");
 
 button.addEventListener("click", function () {
     if (isRed) {
@@ -20,15 +21,18 @@ button.addEventListener("click", function () {
 
 
 menuBtn.addEventListener("click", function () {
-    if (isOpen) {
-        sideBar.style.display = "none";
-        isOpen = false;
-
-    }
-    else {
-        sideBar.style.display = "block";
-        isOpen = true;
-    }
 
 
-})
+    sideBar.style.left = "0";
+    isOpen = true;
+
+
+
+});
+close.addEventListener("click", function () {
+
+    sideBar.style.left = "-100px";
+    isOpen = false;
+
+
+});
